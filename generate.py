@@ -8,7 +8,7 @@ import random, sys
 
 path = './siddhartha.txt'
 print 'opening txt'
-text = open(path).read().lower()
+text = open(path).read().lower().decode('utf-8')
 print 'corpus length:', len(text)
 
 chars = set(text)
